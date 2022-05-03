@@ -14,16 +14,6 @@ header {
     padding-left: 30px;
 }
 
-section {
-    grid-column: 2/-1;
-    grid-row: 2 / -1;
-    background-color: #f1f4f4;
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 60% 40%;
-    padding-top: 20px;
-}
-
 /*top header for search bar and alert */
 #headerTop {
     display: flex;
@@ -119,61 +109,54 @@ nav h1 {
     font-weight: bold;
 }
 
+section {
+    grid-column: 2/-1;
+    grid-row: 2 / -1;
+    background-color: #f1f4f4;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 50% 50%;
+    padding-top: 20px;
+}
+
 
 .projects {
     grid-row: 1/-1;
+    margin-right: 20px;
 }
-
 #projectContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(3, 33.33%);
     border: 1px solid green;
 }
 
-.announcements h1 {
-    font-size: 1rem;
-    padding-bottom: 5px;
-    font-weight: bold;
-}
- 
-.trending h1, .announce h1, .projects h1{
-    padding-left: 10px;
-    font-size: 1.3rem;
-    font-weight:bold;
-    margin-top: 10px;
-    padding-bottom: 5px;
-}
-
-/*css for each individual trending account */
-.trendingAccount {
-    display: flex;
-    gap:10px;
-    padding: 5px;
-    line-height: 1.3rem;
-}
-
-/*css for each account and announcement container */
-.accounts, .announcements {
-    border-radius: 10px;
+.announcementContainer, .trendingContainer {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    gap: 10px;
-    margin-left: 10px;
-    margin-right: 30px;
-    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 30px;    
 }
-/*removes last underline from announcements*/
-.announcements :last-child {
-    border-bottom: none;
+
+.announcement h1, .announcements h1, .trending h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
 }
-/* css for each individual announcement */
+
 .announcement {
-    padding: 5px;
     font-size: .8rem;
     border-bottom: .5px solid black;
+    padding: 7px;
+}
+
+
+.announcements :last-child {
+    border: none;
+}
+
+.trendingAccount {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
 }
