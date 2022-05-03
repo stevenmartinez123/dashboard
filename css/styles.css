@@ -28,6 +28,10 @@ header form {
     gap: 15px;
 }
 
+#headerGreeting {
+    font-weight: bolder;
+}
+
 /*css for buttons with no styling */
 .btnNoStyling {
     background: none;
@@ -140,7 +144,10 @@ section {
 }
 
 .project p {
+    font-size: .9rem;
     padding-right: 20px;
+    margin-bottom: 20px;
+    font-weight: 100;
 }
 
 .projectImages {
@@ -167,6 +174,7 @@ section {
     font-size: .8rem;
     border-bottom: .5px solid black;
     padding: 7px;
+    font-weight: 100;
 }
 
 
@@ -179,4 +187,9 @@ section {
     align-items: center;
     gap: 20px;
     padding: 10px;
+}
+
+.trendingAccount span {
+    font-weight: 100;
+    font-size: .8rem;
 }
